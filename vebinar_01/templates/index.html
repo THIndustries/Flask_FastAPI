@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Возраст</th>
+    </tr>
+    {% for name in names %}
+    <tr>
+        <td>
+            {{ name['name'] }}
+        </td>
+        <td>
+            {{ name['Lastname'] }}
+        </td>
+        <td>
+            {{ name['age'] }}
+        </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+
+</body>
+</html>

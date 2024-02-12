@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Магазин
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="/">Одежда</a></li>
+            <li><a href="/shoes/">Обувь</a></li>
+            <li><a href="/jacket/">Куртка</a></li>
+        </ul>
+    </div>
+
+    {% block content %}
+        Контент не заполнен
+    {% endblock %}
+
+    <div>
+        <hr>
+        <p>Все права защищены &copy;</p>
+    </div>
+
+</body>
+</html>
