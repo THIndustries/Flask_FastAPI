@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}
+    {{ super() }} - {{ title }}}
+{% endblock %}
+
+{% block content %}
+    <a href="{{ url_for('hello') }}">Ссылка</a>
+{% endblock %}
