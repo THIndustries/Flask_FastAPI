@@ -1,0 +1,14 @@
+.my_footer {
+    background-color: blanchedalmond;
+    text-align: right;
+    padding: 10px 0;
+}
+
+.my_header {
+    background-color: blanchedalmond;
+    align-content: center;
+}
+
+.index_photo {
+    width: 300px;
+}

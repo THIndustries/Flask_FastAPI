@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>
+      {% block title %}
+        Домашняя_работа
+      {% endblock %}
+    </title>
+</head>
+<body>
+  <header class="my_header">
+    <div>
+        <ul>
+
+                <a href="{{ url_for('index') }}">Главная</a>
+                <a href="{{ url_for('regisеt') }}">Регистрация</a>
+
+        </ul>
+    </div>
+  </header>
+
+  <div>
+
+      {% block content %}
+        Контент не заполнен.
+      {% endblock %}
+
+  </div>
+
+
+    <footer>
+        <div class="my_footer">
+            <hr>
+            <p>Все права защищены</p>
+            <p>но это не точно.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
