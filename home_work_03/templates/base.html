@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            SQLAlchemy
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div class="conteiner-fluid">
+        {% block content %}
+            Пустой контент.
+        {% endblock %}
+        <div class="row fixed-bottom modal-footer">
+            <hr>
+            <p>Все права защищены (с)</p>
+        </div>
+    </div>
+
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+</html>
