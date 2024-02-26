@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Path, status
 from pydantic import BaseModel
 from typing import Optional, List
-from uuid import UUID, uuid4
+from uuid import UUID, uuid4 # используется для генерации уникальных идентификаторов
 
 app = FastAPI()
 
